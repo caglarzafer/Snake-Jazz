@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="SnakeCSS.css">
+<link rel="shortcut icon" href="header.png">
+<title>Snake Jazz 3D</title>
+</head>
+	
+	
+<body>	
+	<video autoplay loop id="snakesss">
+		<source src="Materials/SnakeJazzVid.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	
+	<!-- optional overlay text -->
+	<div class="content">
+		<h1>Snake Jazz</h1>
+		<p><i>SaintZ</i></p>
+	<!-- use a button to pause and play with JS -->
+		<button id="button" onClick="myfunction()">Play</button>
+	</div>
+	
+	
+	<script type="text/javascript" language="javascript">
+	//Get the video
+		var video = document.getElementById("snakesss");
+		
+	//get the button
+		var button = document.getElementById("button");
+	
+	//pause and play the video and change the button text
+		function myfunction(){
+			if (video.paused){
+				video.play();
+				button.innerHTML="Pause";
+			} else {
+				video.pause();
+				button.innerHTML="Play";
+			}
+		}	
+	</script>
+</body>
+</html>
