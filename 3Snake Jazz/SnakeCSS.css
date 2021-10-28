@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+#snakesss {
+	position: fixed;
+	right:0;
+	bottom:0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+/* Add some content at the bottom of the video page */
+.content{
+	position: fixed;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+}
+
+#button {
+	width:200px;
+	font-size: 18px;
+	padding:10px;
+	border: none;
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+}
+
+#button:hover {
+	background: #dddddd;
+	color: black;
+}
